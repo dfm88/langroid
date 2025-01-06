@@ -13,6 +13,9 @@ from langroid.utils.configuration import quiet_mode
 from langroid.utils.logging import setup_colored_logging
 from langroid.utils.output import SuppressLoggerWarnings, status
 
+import nest_asyncio
+nest_asyncio.apply()
+
 setup_colored_logging()
 
 load_dotenv()
